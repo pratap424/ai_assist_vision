@@ -1,10 +1,10 @@
-# 📁 AI Assist Vision
+📁 AI Assist Vision
 
-A modular AI-powered visual assistant that performs **image captioning**, **object detection**, and **OCR (text recognition)** with optional **audio feedback**. Built using powerful models like **YOLOv8**, **BLIP-2**, **TrOCR**, and **EasyOCR**.
+A modular AI-powered visual assistant that performs image captioning, object detection, and OCR (text recognition) with optional audio feedback. Built using powerful models like YOLOv8, BLIP-2, TrOCR, and EasyOCR.
 
----
 
-## 📆 Features
+
+📆 Features
 
 - 🖼️ Scene description using BLIP-2
 - 🎯 Object detection using YOLOv8
@@ -12,11 +12,11 @@ A modular AI-powered visual assistant that performs **image captioning**, **obje
 - 🔊 Text-to-speech audio feedback (optional)
 - 📸 Webcam support (planned in Phase 2)
 
----
 
-## 🗂️ Project Structure
 
-```
+🗂️ Project Structure
+
+
 ai_assist_vision/
 │
 ├── main.py                  # Entry point for running the app
@@ -31,50 +31,47 @@ ai_assist_vision/
 │
 └── utils/
     └── helpers.py           # Any helper functions
-```
 
----
 
-## 🚀 Getting Started
 
-### 1. Clone or Download
+🚀 Getting Started
 
-```bash
+ 1. Clone or Download
+
+bash
 git clone https://github.com/yourusername/ai_assist_vision.git
 cd ai_assist_vision
-```
+
 
 Or simply unzip the folder if received as a `.zip`.
 
----
 
-### 2. Create a Virtual Environment (Recommended)
+2. Create a Virtual Environment (Recommended)
 
-```bash
+bash
 python -m venv venv
 venv\Scripts\activate    # On Windows
 # source venv/bin/activate  # On Linux/Mac
-```
 
----
 
-### 3. Install Dependencies
 
-```bash
+
+3. Install Dependencies
+
+bash
 pip install -r requirements.txt
-```
 
----
 
-### 4. Run the App
 
-```bash
+
+4. Run the App
+
+bash
 python main.py
-```
 
----
 
-## 💠 Dependencies
+
+💠 Dependencies
 
 Make sure you have the following models downloaded automatically on first use:
 
@@ -82,16 +79,16 @@ Make sure you have the following models downloaded automatically on first use:
 - `microsoft/trocr-base-printed` (TrOCR)
 - YOLOv8 weights (`yolov8n.pt` by default from Ultralytics)
 
----
 
-## 🖼️ Sample Input
+
+🖼️ Sample Input
 
 Put test images inside the `sample_inputs/` folder (create it if not present). Modify `main.py` to point to your image.
 
----
 
-## 🧑‍💻 Author
 
+🧑‍💻 Author
+By Yash and Shruti
 
 Feel free to use, improve, and share.
 
