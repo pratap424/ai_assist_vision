@@ -1,0 +1,11 @@
+torch>=2.0.0
+transformers
+Pillow
+opencv-python
+pyttsx3
+ultralytics
+matplotlib
+gtts
+IPython
+numpy
+easyocr
