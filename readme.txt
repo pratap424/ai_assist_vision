@@ -92,7 +92,7 @@ Put test images inside the `sample_inputs/` folder (create it if not present). M
 
 ## 🧑‍💻 Author
 
-Made with ❤️ by Yash and Shruti.
+
 Feel free to use, improve, and share.
 
 ---
