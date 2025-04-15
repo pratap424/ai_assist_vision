@@ -10,7 +10,7 @@ A modular AI-powered visual assistant that performs image captioning, object det
 - 🎯 Object detection using YOLOv8
 - 🔍 OCR using TrOCR and EasyOCR
 - 🔊 Text-to-speech audio feedback (optional)
-- 📸 Webcam support (planned in Phase 2)
+- 📸 Webcam support 
 
 
 
