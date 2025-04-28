@@ -1,8 +1,6 @@
 from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
 
-blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
-blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 def describe_scene(image_path):
     blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
