@@ -1,3 +1,10 @@
+import os
+
+# IMPORTANT: Force matplotlib to non-GUI backend if running on Render
+if os.environ.get("RENDER", "0") == "1":
+    import matplotlib
+    matplotlib.use('Agg')
+
 from transformers import Blip2Processor, Blip2ForConditionalGeneration
 import torch
 from PIL import Image
@@ -9,7 +16,7 @@ import cv2
 
 
 import sys
-import os
+
 
 # Add the main project directory to the Python path
 sys.path.append(os.path.abspath("."))  # You can replace "." with your project path
