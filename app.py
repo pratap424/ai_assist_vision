@@ -2,12 +2,15 @@ from flask import Flask, request, jsonify
 from main import run_pipeline
 from PIL import Image
 import io
-import os   # <-- add this
+import os
+
+print("✅ App is starting...")   # Add this
 
 app = Flask(__name__)
 
 @app.route('/analyze', methods=['POST'])
 def analyze_image():
+    print("✅ Received request!")   # Add this
     if 'image' not in request.files:
         return jsonify({'error': 'No image uploaded'}), 400
 
@@ -21,5 +24,6 @@ def analyze_image():
     return jsonify(output)
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))   # <-- read port dynamically
+    port = int(os.environ.get('PORT', 5000))
+    print(f"✅ Running on 0.0.0.0:{port}")    # Add this
     app.run(host='0.0.0.0', port=port)
