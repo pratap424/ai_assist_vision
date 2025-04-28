@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from main import run_pipeline
 from PIL import Image
 import io
+import os   # <-- add this
 
 app = Flask(__name__)
 
@@ -16,11 +17,9 @@ def analyze_image():
     temp_path = "temp_uploaded_image.jpg"
     image.save(temp_path)
 
-    # ✅ Call your pipeline and capture result
     output = run_pipeline(image_path=temp_path, save_output=False, speak_enabled=False)
-
-    # ✅ Return JSON
     return jsonify(output)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))   # <-- read port dynamically
+    app.run(host='0.0.0.0', port=port)
