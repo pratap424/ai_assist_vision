@@ -3,5 +3,5 @@ services:
     name: ai-assist-vision
     env: python
     buildCommand: ""
-    startCommand: python app.py
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
     plan: free
