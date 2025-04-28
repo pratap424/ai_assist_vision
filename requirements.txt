@@ -10,3 +10,4 @@ IPython
 numpy
 easyocr
 flask
+gunicorn
