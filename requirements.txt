@@ -9,3 +9,4 @@ gtts
 IPython
 numpy
 easyocr
+flask
