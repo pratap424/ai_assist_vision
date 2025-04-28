@@ -1,7 +1,7 @@
 services:
   - type: web
-    name: ai-assist-vision
+    name: ai-assist-vision-small
     env: python
     buildCommand: ""
-    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app_small:app
     plan: free
