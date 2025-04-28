@@ -5,6 +5,9 @@ blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning
 blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
 
 def describe_scene(image_path):
+    blip_processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
+    blip_model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
+
     image = Image.open(image_path).convert("RGB")
     inputs = blip_processor(images=image, return_tensors="pt")
     out = blip_model.generate(**inputs)
